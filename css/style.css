@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 
+.hidemain {
+	display :none;
+}
 html,
 body {
 	padding: 0;
