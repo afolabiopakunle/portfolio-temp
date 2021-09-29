@@ -1,229 +1,576 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="./img/afolabi logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/introjs.css">
-    <script src="https://use.fontawesome.com/5c65e16b4d.js"></script>
-    <style>
-        body {
-            min-width: 320px;
-        }
-    </style>
-    <title>Afolabi Opakunle : Portfolio</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./css/errand.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Gofer</title>
+    </head>
 
-<body>
-    <main class="hidemain">
+    <body>
+        <main class="container-fluid errand p-0">
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand ml-5" href="./index.html"><img src="./img/logo-blue.png"
+                            style="width:110px; margin-top: -14px;" alt="logo"></a>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                        data-target="#navb">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-
-        <nav id="navbar" class="navbar navbar-expand bg-warning navbar-dark fixed-top">
-            <div class="container">
-                <a class="navbar-brand text-dark" href="#">
-                    <img src="./img/afolabi logo.png" alt="Logo" class="myLogo">
-                    <button class="btn btn-primary" onclick="startIntro()">Show Me Around</button>
-                </a>
-                <ul class="navbar-nav" id="step3">
-                    <li class="nav-item">
-                        <a class="nav-link rounded button_slide slide_right" target="_blank" title="Github"
-                            href="https://github.com/afolabiopakunle">GitHub</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link rounded button_slide slide_right" title="Twitter" target="_blank"
-                            href="https://twitter.com/AfolabiOpa">Twitter</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link rounded ml-4 button_slide slide_right" target="_blank"
-                            href="https://www.linkedin.com/in/afolabi-opakunle-836048197/">LinkedIn</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="container box">
-            <div class="box" id="step2">
-                <h1 class="display-3 mt-5 text-center title h2s">Afolabi <span class="display-1">Opakunle</span></h1>
-            </div>
-
-            <p class="text-center p-3 lead text-white">A Front end designer and developer with vast knowledge of HTML,
-                CSS,
-                Bootstrap, JavaScript, Node, MongoDB,<span class="bolden"> VueJS</span> and other modern tools</p>
-        </div>
-        <div class="container-fluid border shadow-sm"></div>
-        <div class="container-fluid card-stack p-0">
-            <div class="container">
-                <div class="row pt-2">
-                    <div class="col-md-4">
-                        <div class="card" id="step1">
-                            <a href="./errands.html" target="_blank">
-                                <div class="card-body">
-                                    <h4 class="card-title">Complete Errands App | JavaScript & Bootstrap</h4>
-                                    <p class="card-text">Do you need quick services of regular daily people to help do
-                                        stuffs for you?</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card ">
-                            <a href="./gofer.html" target="_blank">
-                                <div class="card-body">
-                                    <h4 class="card-title">Playstore App Landing Page</h4>
-                                    <p class="card-text">Landing page design has evolved over a short period of time.
-                                        This design is modern and ageless.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card ">
-                            <a href="https://www.martinasapartments.com" target="_blank">
-                                <div class="card-body">
-                                    <h4 class="card-title">Hotel Booking Website</h4>
-                                    <p class="card-text">This website is targeted at converting visitors to book an
-                                        apartment with Martinas. </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card ">
-                            <a href="https://www.sportsglobaltv.com" target="_blank">
-                                <div class="card-body">
-                                    <h4 class="card-title">Sports Website Project</h4>
-                                    <p class="card-text">Adrenalined filled sports webpage with trendy color selection
-                                        and user-friendly backend cms functionalities.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="./todo.html" target="_blank">
-                            <div class="card ">
-                                <div class="card-body">
-                                    <h4 class="card-title">JavaScript Shopping List</h4>
-                                    <p class="card-text">Search enabled shopping list app, constructed with the use of
-                                        plain JavaScript with commented jQuery version included.</p>
-                                </div>
+                    <div class="collapse navbar-collapse" id="navb">
+                        <ul class="navbar-nav mr-auto">
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <ul class="navbar-nav position-relative">
+                                <li class="nav-item">
+                                    <a class="nav-link" id="all-errands" href="./errands.html">All Errands</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="post-errand" href="./post-errand.html">Post Errand</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./wallet.html">Wallet</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./profile.html">Profile</a>
+                                </li>
+                            </ul>
+                            <div class="notification-box">
+                                <i class="material-icons md-24">notification_important</i><span
+                                    class="notification">4</span>
                             </div>
-                        </a>
+                            <div class="user-box">
+                                <img src="./img/idris.jpg" class="profile-picture" alt="profile-pix"><span><i
+                                        class="material-icons md-24 text-dark  ">keyboard_arrow_down</i></span>
+                            </div>
+                        </form>
                     </div>
-                    <div class="col-md-4">
-                        <a href="https://dribbble.com/afolabiopakunle" target="_blank">
-                            <div class="card ">
-                                <div class="card-body">
-                                    <h4 class="card-title">My Designs</h4>
-                                    <p class="card-text">Page contains screenshots of previous designs and concepts I
-                                        delivered using Figma and AdobeXD in some projects
-                                    </p>
+                </nav>
+                <!-- </div> -->
+            </header>
+            <div class="errands-main">
+                <div class="sidebar">
+                    <div class="side-box top ongoing-errands p-3 position-relative">
+                        <h6 class="font-weight-bold "> Ongoing Errands</h6>
+                        <div class="scrollbox dragscroll">
+                            <p class="no-activity ">You currently have no activity running.</p>
+                            <a href="./view-errand.html" class="view-errand-main">
+                                <div class="user-card">
+                                    <div class="divide split">
+                                        <p class="posted">You posted</p>
+                                        <p class="time">2 Hours ago</p>
+                                    </div>
+                                    <div class="main-card divide">
+                                        <img class="profile-picture-inner mr-3" src="./img/idris.jpg"
+                                            alt="profile-picture">
+                                        <div class="details divide down">
+                                            <p class="user-name">
+                                                Jumoke Adeleke
+                                            </p>
+                                            <p class="errand-details">My dog needs a bath, I haven't washed her in
+                                                months,
+                                                she's
+                                                super...</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="row mt-1 ">
-
-
-
-                </div>
-                <div class="row mt-1 mb-5">
-                    <div class="col-md-4">
-                        <div class="card ">
-                            <div class="card-body">
-                                <h4 class="card-title text-danger">Upcoming projects...</h4>
-                                <p class="card-text mb-0"><strong>Drag & Drop eShopping application</strong> <span
-                                        class="text-danger">
-                                        *</span></p>
-                                <p class="card-text mb-0"><strong>betting application</strong> <span
-                                        class="text-danger">
-                                        *</span></p>
-                                <p class="card-text mb-0"><strong>Driver request application</strong><span
-                                        class="text-danger">
-                                        *</span></p>
-                            </div>
+                            </a>
+                            <a href="./view-errand.html" class="view-errand-main">
+                                <div class="user-card">
+                                    <div class="divide split p-0">
+                                        <p class="you-accepted">You Accepted</p>
+                                        <p class="time">15 Minutes ago</p>
+                                    </div>
+                                    <div class="main-card divide">
+                                        <img class="profile-picture-inner mr-3" src="./img/idris.jpg"
+                                            alt="profile-picture">
+                                        <div class="details divide down">
+                                            <p class="user-name">
+                                                Nelson Igwilo
+                                            </p>
+                                            <p class="errand-details">My dog needs a bath, I haven't washed her in
+                                                months,
+                                                she's
+                                                super...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="./view-errand.html" class="view-errand-main">
+                                <div class="user-card">
+                                    <div class="divide split p-0">
+                                        <p class="you-accepted">You Accepted</p>
+                                        <p class="time">15 Minutes ago</p>
+                                    </div>
+                                    <div class="main-card divide">
+                                        <img class="profile-picture-inner mr-3" src="./img/idris.jpg"
+                                            alt="profile-picture">
+                                        <div class="details divide down">
+                                            <p class="user-name">
+                                                Nelson Igwilo
+                                            </p>
+                                            <p class="errand-details">My dog needs a bath, I haven't washed her in
+                                                months,
+                                                she's
+                                                super...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="./view-errand.html" class="view-errand-main">
+                                <div class="user-card">
+                                    <div class="divide split p-0">
+                                        <p class="you-accepted">You Accepted</p>
+                                        <p class="time">15 Minutes ago</p>
+                                    </div>
+                                    <div class="main-card divide">
+                                        <img class="profile-picture-inner mr-3" src="./img/idris.jpg"
+                                            alt="profile-picture">
+                                        <div class="details divide down">
+                                            <p class="user-name">
+                                                Nelson Igwilo
+                                            </p>
+                                            <p class="errand-details">My dog needs a bath, I haven't washed her in
+                                                months,
+                                                she's
+                                                super...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-
-                    </div>
-
-                </div>
-            </div>
-            <div class="container-fluid border shadow-sm"></div>
-
-            <div class="container-fluid bg-white p-0">
-                <div class="container">
-                    <a href="https://martinasapartments.com/hardstorage/2020/08/Afolabi-O.-Opakunle-Front-End.pdf"
-                        target="_blank">
-                        <h1 class="text-success pt-5 pl-5">Download Resume</h1>
-                    </a>
-                    <div class="row pl-5 pt-2 ">
-
-                        <div class="col-md-6">
-                            <a href="mailto:opakunleafolabi@gmail.com" id="step4">
-                                <img src="./img/afolabi logo.png" width="30" alt="logo">
-                                <span class="font-weight-bold">opakunleafolabi@gmail.com</span> just
-                                <span class="bg-primary p-1 rounded">Hire me!</span>
+                    <div class="side-box bottom ongoing-bids p-3">
+                        <h6 class="font-weight-bold">Ongoing Bids</h6>
+                        <div class="scrollbox dragscroll">
+                            <p class="no-activity">You currently have no ongoing bids running.</p>
+                            <a href="./view-errand.html" class="view-errand-main">
+                                <div class="user-card">
+                                    <div class="divide split">
+                                        <p class="pending">Pending</p>
+                                    </div>
+                                    <div class="main-card divide">
+                                        <img class="profile-picture mr-3" src="./img/dope.jpg" alt="profile-picture">
+                                        <div class="details divide down">
+                                            <p class="user-name">
+                                                Daniel Waters
+                                            </p>
+                                            <p class="errand-details">My dog needs a bath, I haven't washed her in
+                                                months,
+                                                she's
+                                                super friendly...</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </a>
-                            <p>Delivering clear-cut Frontend user interfaces since 2017.</p>
-                            <div class="box-in">
-                                <div class="spin-container">
-                                    <div class="shape">
-                                        <div class="bd"></div>
+                            <a href="./view-errand.html" class="view-errand-main">
+                                <div class="user-card">
+                                    <div class="divide split">
+                                        <p class="accepted">Accepted</p>
+                                    </div>
+                                    <div class="main-card divide">
+                                        <img class="profile-picture mr-3" src="./img/dope.jpg" alt="profile-picture">
+                                        <div class="details divide down">
+                                            <p class="user-name">
+                                                Daniel Waters
+                                            </p>
+                                            <p class="errand-details">My dog needs a bath, I haven't washed her in
+                                                months,
+                                                she's
+                                                super friendly...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="user-card">
+                                <div class="divide split">
+                                    <p class="rejected">Rejected</p>
+                                </div>
+                                <div class="main-card divide">
+                                    <img class="profile-picture mr-3" src="./img/dope.jpg" alt="profile-picture">
+                                    <div class="details divide down">
+                                        <p class="user-name">
+                                            Daniel Waters
+                                        </p>
+                                        <p class="errand-details">My dog needs a bath, I haven't washed her in months,
+                                            she's
+                                            super friendly...</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <h6 class="text-danger">Mentors</h6>
-                                    <a href="https://github.com/ezra-obiwale" target="_blank" rel="noopener noreferrer">
-                                        <p class="footnote">Ezra Obiwale</p>
-                                    </a>
-                                    <a href="https://github.com/bradtraversy" target="_blank" rel="noopener noreferrer">
-                                        <p class="footnote">Brad Traversy</p>
-                                    </a>
-                                    <a href="https://github.com/designcourse" target="_blank" rel="noopener noreferrer">
-                                        <p class="footnote">Gary Simon</p>
-                                    </a>
-                                    <a href="https://www.youtube.com/c/ColtSteeleCode/featured" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <p class="footnote">Colt Steele</p>
-                                    </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <h6 class="text-danger">Students</h6>
-                                    <p class="footnote">Peace Moyosore</p>
-                                </div>
-                                <div class="col-md-4">
-                                    <h6 class="text-danger">Recommended Sites</h6>
-                                    <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">
-                                        <p class="footnote">freeCodeCamp.org</p>
-                                    </a>
-                                    <a href="https://www.pluralsight.com/" target="_blank" rel="noopener noreferrer">
-                                        <p class="footnote">Pluralsight.com</p>
-                                    </a>
-                                </div>
+                    </div>
+                </div>
+                <div class="main-body post-errand-display">
+                    <div class="min-map">
+                        <div class="map-progress">
+                            <div>
+                                <p class="map">Category</p>
+                                <p class="circle-filled"></p>
+                                <p class="progress-line"></p>
+                            </div>
+                            <div class="sub-map">
+                                <p class="map">Location</p>
+                                <p class="circle-empty"></p>
+                                <p class="progress-line"></p>
+                            </div>
+                            <div class="sub-map">
+                                <p class="map"> &nbsp; &nbsp; Details</p>
+                                <p class="circle-empty"></p>
+                                <p class="progress-line"></p>
+                            </div>
+                            <div class="sub-map">
+                                <p class="map">&nbsp; Preview</p>
+                                <p class="circle-empty"></p>
+                            </div>
+                        </div>
+                        <h4 class="bold-title text-left mt-3">
+                            What kind of Errand do you want to run?
+                        </h4>
+                    </div>
+                    <div class="card-items">
+                        <p class="card-item"><i class="material-icons md-24">local_mall</i>&nbsp; Shopping
+                        </p>
+                        <p class="card-item"><i class="material-icons md-24">local_shipping</i>&nbsp; Pick
+                            up &
+                            Delivery</p>
+                        <p class="card-item"><i class="material-icons md-24">fastfood</i>&nbsp; Catering
+                            Service</p>
+                        <p class="card-item"><i class="material-icons md-24">ac_unit</i>&nbsp;
+                            Cleaning</p>
+                        <p class="card-item"><i class="material-icons md-24">local_laundry_service</i>&nbsp;
+                            Laundry</p>
+                        <p class="card-item"><i class="material-icons md-24">school</i>&nbsp; Reading/Writing</p>
+                        <p class="card-item"><i class="material-icons md-24">style</i>&nbsp; Ticketing</p>
+                        <p class="card-item"><i class="material-icons md-24">home_work</i>&nbsp; Real Estate
+                        </p>
+                        <p class="card-item"><i class="material-icons md-24">school</i>&nbsp; Tutoring</p>
+                        <p class="card-item"><i class="material-icons md-24">home_work</i>&nbsp; Chauffer
+                        </p>
+                        <p class="card-item"><i class="material-icons md-24">toys</i>&nbsp; Gardening
+                        </p>
+                        <p class="card-item"><i class="material-icons md-24">room_service</i>&nbsp; Food
+                            Purchase</p>
+                        <p class="card-item"><i class="material-icons md-24">devices_other</i>&nbsp;
+                            Electronics
+                            Repair</p>
+                        <p class="card-item"><i class="material-icons md-24">phone_iphone</i>&nbsp; Phones
+                            Repair</p>
+                        <p class="card-item"><i class="material-icons md-24">laptop</i>&nbsp; Computers
+                            Repair</p>
+                        <p class="card-item"><i class="material-icons md-24">local_shipping</i>&nbsp; Moving
+                        </p>
+                        <p class="card-item"><i class="material-icons md-24">child_friendly</i>&nbsp; Baby
+                            Sitting</p>
+                        <p class="card-item"><i class="material-icons md-24">weekend</i>&nbsp; Carpentry
+                        </p>
+                        <p class="card-item card-item-2"><i class="material-icons md-24">school</i>&nbsp; Research &
+                            Documentation</p>
+                        <p class="card-item"><i class="material-icons md-24">directions_car</i>&nbsp; Auto
+                            Repairs</p>
+                        <p class="card-item card-item-2"><i class="material-icons md-24">home_work</i>&nbsp; Fashion and
+                            Tailoring</p>
+                        <p class="card-item"><i class="material-icons md-24">motorcycle</i>&nbsp; Errands
+                        </p>
+                        <p class="card-item"><i class="material-icons md-24">home_work</i>&nbsp; Make Up
+                            Artistry</p>
+                        <p class="card-item"><i class="material-icons md-24 text-dark">view_carousel</i>&nbsp;
+                            Others
+                        </p>
+                        <!-- <form class="" action="#">
+
+                            <button id="next-to-location" type="submit" class="btn mt-5 btn-primary btn-lg "><span
+                                    class="spinner-grow"></span>
+                                Next</button>
+                        </form> -->
+                    </div>
+                </div>
+                <div class="main-body post-location d-none">
+                    <!-- <div class="min-map m-3">
+                        <div class="map-progress">
+                            <div>
+                                <p class="map">Category</p>
+                                <p class="circle-filled"></p>
+                                <p class="progress-line-filled"></p>
+                            </div>
+                            <div class="sub-map">
+                                <p class="map">Location</p>
+                                <p class="circle-filled"></p>
+                                <p class="progress-line"></p>
+                            </div>
+                            <div class="sub-map">
+                                <p class="map"> &nbsp; &nbsp; Details</p>
+                                <p class="circle-empty"></p>
+                                <p class="progress-line"></p>
+                            </div>
+                            <div class="sub-map">
+                                <p class="map">&nbsp; Preview</p>
+                                <p class="circle-empty"></p>
+                            </div>
+                        </div> -->
+                        <!-- <h4 class="bold-title text-left mt-3">
+                            Pick a Location for your Errand
+                        </h4>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="" class="label-title text-dark pt-0 pb-0">Where is your pickup
+                                            Location?</label>
+                                        <input type="text" class="form-control form-control-lg mb-1" placeholder=""
+                                            name="text1">
+                                        <label for="" class="label-title text-dark pt-0 pb-0">Where do you want it
+                                            delivered to?</label>
+                                        <input type="text" class="form-control form-control-lg mb-1" placeholder=""
+                                            name="text1">
+                                        <p class="font-weight-bold m-2 "><i class="material-icons">
+                                                trip_origin
+                                            </i> Use my current location</p>
+                                        <a type="submit" href="#" id="previous-post-errand"
+                                            class="btn px-5 mt-5 btn-primary btn-lg px-3 float-left">
+                                            Previous</a>
+                                        <a type="submit" href="#"
+                                            class="btn px-5 mt-5 btn-primary btn-lg float-right px-3"
+                                            id="next-to-post-errand-details">
+                                            Next</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="main-body post-location d-none">
+                    <div class="min-map m-3">
+                        <div class="map-progress">
+                            <div>
+                                <p class="map">Category</p>
+                                <p class="circle-filled"></p>
+                                <p class="progress-line-filled"></p>
+                            </div>
+                            <div class="sub-map">
+                                <p class="map">Location</p>
+                                <p class="circle-filled"></p>
+                                <p class="progress-line"></p>
+                            </div>
+                            <div class="sub-map">
+                                <p class="map"> &nbsp; &nbsp; Details</p>
+                                <p class="circle-empty"></p>
+                                <p class="progress-line"></p>
+                            </div>
+                            <div class="sub-map">
+                                <p class="map">&nbsp; Preview</p>
+                                <p class="circle-empty"></p>
+                            </div>
+                        </div>
+                        <h4 class="bold-title text-left mt-3">
+                            Pick a Location for your Errand
+                        </h4>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="" class="label-title text-dark pt-0 pb-0">Where do you want your
+                                            Errand done?</label>
+                                        <input type="text" class="form-control form-control-lg mb-1" placeholder=""
+                                            name="text1">
+                                        <p class="font-weight-bold m-2 "><i class="material-icons">
+                                                trip_origin
+                                            </i> Use my current location</p>
+                                        <a type="submit" href="#" id="previous-post-errand"
+                                            class="btn px-5 mt-5 btn-primary btn-lg px-3 float-left">
+                                            Previous</a>
+                                        <a type="submit" href="#"
+                                            class="btn px-5 mt-5 btn-primary btn-lg float-right px-3"
+                                            id="next-to-post-errand-details">
+                                            Next</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-body post-errand-details d-none">
+                    <div class="min-map m-3">
+                        <div class="map-progress">
+                            <div>
+                                <p class="map">Category</p>
+                                <p class="circle-filled"></p>
+                                <p class="progress-line-filled"></p>
+                            </div>
+                            <div class="sub-map">
+                                <p class="map">Location</p>
+                                <p class="circle-filled"></p>
+                                <p class="progress-line-filled"></p>
+                            </div>
+                            <div class="sub-map">
+                                <p class="map"> &nbsp; &nbsp; Details</p>
+                                <p class="circle-filled"></p>
+                                <p class="progress-line"></p>
+                            </div>
+                            <div class="sub-map">
+                                <p class="map">&nbsp; Preview</p>
+                                <p class="circle-empty"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h4 class="bold-title float-left mt-2">
+                                    Errand Details </h4>
+                                <h4 class="bold-title text-right mt-2">
+                                    <span class="font-weight-bold bluetext">+</span> Add File </h4>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="" class="label-title text-dark text-left w-auto pt-0 pb-0">Errand
+                                            Details</label>
+                                        <textarea name="" class="form-control  mb-1" id="" cols="20"
+                                            rows="8"></textarea>
+                                        <div class="form-group">
+                                            <label for="" class="label-title text-dark">How Much are you
+                                                willing to pay
+                                                for this errand?</label>
+                                            <input type="text" class="form-control form-control-lg mb-1 " placeholder=""
+                                                name="text1">
+                                            <label for="" class="label-title text-dark ">When is the
+                                                deadline
+                                                for this errand?</label>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="" class="text-dark">Date:</label>
+                                                    <input type="datetime-local"
+                                                        class="form-control form-control-lg mb-1 d-inline-block"
+                                                        placeholder="" name="text1">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="" class="text-dark">Time:</label>
+                                                    <input type="time"
+                                                        class="form-control form-control-lg mb-1 d-inline-block"
+                                                        placeholder="" name="text1">
+                                                </div>
+                                            </div>
+                                            <div class="form-check">
+                                                <label class="container-check"><span>Insure this errand? <span
+                                                            class="bluetext"> Learn
+                                                            More</span> </span>
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <input type="text" class="form-control form-control-lg " placeholder=""
+                                                name="text1">
+                                        </div>
+                                    </div>
+                                    <a type="submit" href="#"
+                                        class="btn d-block w-25 col-xl-10 mt-5 btn-primary btn-lg px-3 float-left"
+                                        id="previous-to-location"> Previous</a>
+                                    <a type="submit" href="#" id="preview-btn"
+                                        class="btn d-block w-25 col-xl-10 mt-5 btn-outline-primary btn-lg float-right px-3"
+                                        id="">Preview</a>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-body preview-pane d-none">
+                    <div class="min-map m-3">
+                        <div class="map-progress">
+                            <div>
+                                <p class="map">Category</p>
+                                <p class="circle-filled"></p>
+                                <p class="progress-line-filled"></p>
+                            </div>
+                            <div class="sub-map">
+                                <p class="map">Location</p>
+                                <p class="circle-filled"></p>
+                                <p class="progress-line-filled"></p>
+                            </div>
+                            <div class="sub-map">
+                                <p class="map"> &nbsp; &nbsp; Details</p>
+                                <p class="circle-filled"></p>
+                                <p class="progress-line-filled"></p>
+                            </div>
+                            <div class="sub-map">
+                                <p class="map">&nbsp; Preview</p>
+                                <p class="circle-filled"></p>
+                            </div>
+                        </div>
+                        <h4 class="bold-title text-left mt-3">
+                            Preview
+                        </h4>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <form>
+                                    <div class="form-group preview-box">
+                                        <div class="preview-pane">
+                                            <p class="label-title">Category</p>
+                                            <p class="selected-category">Shopping</p>
+                                            <p class="label-title">Location</p>
+                                            <p class="selected-location">Maryland</p>
+                                            <p class="label-title">Full Information About the Errand</p>
+                                            <p class="selected-information">I am in Ajah, I need someone to help me
+                                                pick
+                                                up
+                                                my clothes from my friend in Ikeja Along before 6:00pm today.
+                                            </p>
+                                            <p class="label-title">How much you are willing to pay</p>
+                                            <p class="sub-title">this includes all cost of running this errand</p>
+                                            <p class="selected-payment">N 3,500</p>
+                                            <p class="label-title">You have Valued this errand in Naira</p>
+                                            <p class="sub-title">this means in the case of any issue, you will be
+                                                refunded
+                                                this money</p>
+                                            <p class="selected-payment">N 21,500</p>
+
+                                        </div>
+                                        <a type="submit" href="#" id="previous-post-errand"
+                                            class="btn px-5 mt-5 btn-outline-primary btn-lg px-3 float-left">
+                                            Send Gofer</a>
+                                        <a type="submit" class="btn mt-5 btn-primary btn-lg float-right px-5 text-white"
+                                            id="post-errand-btn">
+                                            Post to Public</a>
+                                    </div>
+
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
 
             </div>
+        </main>
+        <div class="modal fade" id="myModal3" role="dialog">
+            <div class="modal-dialog bid-request">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header bid-request">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body text-center verify-msg">
+                        <i class="material-icons xl-txt bluetext mb-4">check_circle</i>
+                        <p>Your Bid has been posted to the Gofer; <br>
+                            You would receive a response soon.</p>
+                    </div>
+                    <div class="text-center mb-3">
+                        <button type="button" class="btn btn-lg btn-primary" data-dismiss="modal">Okay</button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </main>
-    <script src="./js/jquery-3.4.1.js"></script>
-    <script src="./js/intro.js"></script>
-    <script src="./js/script.js"></script>
-</body>
+        <script src="./js/jquery-3.4.1.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/script.js"></script>
+        <script>
+            $("#post-errand-btn").click(function (e) {
+                e.preventDefault();
+                $("#myModal3").modal({ backdrop: "static" });
+            });
+        </script>
+    </body>
 
 </html>
